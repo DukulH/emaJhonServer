@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-const port = 5000;
+const port = 123456;
 
 
 
@@ -72,4 +72,4 @@ client.connect(err => {
 });
 
 
-app.listen(process.env.PORT || port)
+app.listen(port)
