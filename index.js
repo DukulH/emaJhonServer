@@ -2,6 +2,7 @@ const express = require('express');
 require('dotenv').config()
 const bodyParser = require('body-parser');
 const cors = require('cors');
+require('dotenv').config();
 
 const MongoClient = require('mongodb').MongoClient;
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.7mlny.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
